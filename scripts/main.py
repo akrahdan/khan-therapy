@@ -33,6 +33,10 @@ class KhanTherapy(object):
     STOP_SPEECH = 'stop_speech'
     CATALOG_KEY = 'KhanTherapy/Event'
     KEYWORDS_KEY = 'KhanTherapy/Residents'
+    REQUEST_KEY = 'KhanTherapy/Request'
+    CONFIRM_KEY = 'KhanTherapy/Confirm'
+    START_KEY = 'KhanTherapy/Start'
+    RESIDENT_KEY = 'KhanTherapy/Resident'
     GREETER_MODE = 'KhanTherapy/greeterMode'
     SAFETY_OFF   = 'KhanTherapy/safetyOff'
     SAFETY_ON    = 'KhanTherapy/safetyOn'
@@ -88,6 +92,8 @@ class KhanTherapy(object):
 
         self.speech_lock = threading.Lock()
         self.events.connect(self.YIELD_KEY, self.handle_yield)
+       
+        
         self.events.connect(self.STOP_SPEECH, self.stop_speech)
         self.events.connect(self.GREETER_MODE, self.start_greeter)
         self.events.connect(self.SAFETY_OFF, self.set_safety_off)
@@ -163,6 +169,10 @@ class KhanTherapy(object):
 
     def stop_speech(self, data):
         self.s.ALTextToSpeech.stopAll()
+    
+    
+
+
 
     def say_tag(self, tag):
         self.logger.info('say_tag : %s' % tag)

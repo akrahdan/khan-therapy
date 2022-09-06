@@ -111,9 +111,9 @@
         <File name="socket.io.min" src="html/qimessaging/1.0/socket.io.min.js" />
         <File name="qimessaging" src="html/qimessaging/2/qimessaging.js" />
         <File name="click" src="html/click.ogg" />
-        <File name="main.54a2eb1e" src="html/static/js/main.54a2eb1e.js" />
-        <File name="main.54a2eb1e.js.LICENSE" src="html/static/js/main.54a2eb1e.js.LICENSE.txt" />
-        <File name="main.54a2eb1e.js" src="html/static/js/main.54a2eb1e.js.map" />
+        <File name="main.6c372c7c" src="html/static/js/main.6c372c7c.js" />
+        <File name="main.6c372c7c.js.LICENSE" src="html/static/js/main.6c372c7c.js.LICENSE.txt" />
+        <File name="main.6c372c7c.js" src="html/static/js/main.6c372c7c.js.map" />
     </Resources>
     <Topics>
         <Topic name="BestBuy_enu" src="dialog/BestBuy/BestBuy_enu.top" topicName="BestBuy" language="en_US" />
